@@ -177,13 +177,15 @@ class Client
      */
     private function hydrateCurlHandles()
     {
+        $chs = [];
+
         foreach ($this->urls as $key => $url) {
             $ch = curl_init($url);
             curl_setopt_array($ch, $this->curlOptions);
             $chs[$key] = $ch;
         }
 
-        return isset($chs) ? $chs : [];
+        return $chs;
     }
 
     /**
@@ -197,8 +199,8 @@ class Client
         $open = 0;
         $tmp = $chs;
 
-        while ($tmp || $open > 0) {
-            if ($tmp && $open < $this->concurrency) {
+        while (!empty($tmp) || $open > 0) {
+            if (!empty($tmp) && $open < $this->concurrency) {
                 curl_multi_add_handle($mh, array_pop($tmp));
             }
 
