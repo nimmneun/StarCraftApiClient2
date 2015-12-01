@@ -1,6 +1,6 @@
 # StarCraftApiClient2
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nimmneun/StarCraftApiClient/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nimmneun/StarCraftApiClient/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/nimmneun/StarCraftApiClient/badges/build.png?b=master)](https://scrutinizer-ci.com/g/nimmneun/StarCraftApiClient/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nimmneun/StarCraftApiClient2/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nimmneun/StarCraftApiClient2/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/nimmneun/StarCraftApiClient2/badges/build.png?b=master)](https://scrutinizer-ci.com/g/nimmneun/StarCraftApiClient2/build-status/master)
 
 Just a "single file SC2 API client" to perform multiple request
 
