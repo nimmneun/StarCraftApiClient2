@@ -230,11 +230,19 @@ class Client
     }
 
     /**
-     * @return array
+     * @return array[]
      */
-    public function each()
+    public function responses()
     {
         return isset($this->responses) ? $this->responses : [];
+    }
+
+    /**
+     * @return array[]
+     */
+    public function urls()
+    {
+        return $this->urls;
     }
 
     /**
@@ -243,8 +251,7 @@ class Client
      */
     public function get($response)
     {
-        return isset($this->responses[$response])
-            ? $this->responses[$response] : [];
+        return isset($this->responses[$response]) ? $this->responses[$response] : [];
     }
 
     /**
