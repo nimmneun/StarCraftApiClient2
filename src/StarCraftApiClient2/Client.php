@@ -129,7 +129,7 @@ class Client
      */
     public function addLadderRequest($ladder, $region = 'eu')
     {
-        $requestId = 'ladder'.$ladder;
+        $requestId = 'ladder/'.$ladder;
         $this->urls[$requestId] = sprintf(self::SC2_LADDER_URL,
             $region, $ladder, $this->locale, $this->apiKey);
     }
