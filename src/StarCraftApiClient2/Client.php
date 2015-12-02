@@ -234,7 +234,7 @@ class Client
      */
     public function responses()
     {
-        return isset($this->responses) ? $this->responses : [];
+        return $this->responses;
     }
 
     /**
@@ -246,12 +246,12 @@ class Client
     }
 
     /**
-     * @param $response
+     * @param $key
      * @return array
      */
-    public function get($response)
+    public function get($key)
     {
-        return isset($this->responses[$response]) ? $this->responses[$response] : [];
+        return $this->responses[$key];
     }
 
     /**
