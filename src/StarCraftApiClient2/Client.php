@@ -251,7 +251,7 @@ class Client
      */
     public function get($key)
     {
-        return $this->responses[$key];
+        return isset($this->responses[$key]) ? $this->responses[$key] : [];
     }
 
     /**
