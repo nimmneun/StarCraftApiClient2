@@ -2,7 +2,7 @@
   "name": "nimmneun/StarCraftApiClient2",
   "autoload": {
     "psr-4": {
-      "BNetApiClient\\": "src/StarCraftApiClient2/"
+      "StarCraftApiClient2\\": "src/StarCraftApiClient2/"
     }
   }
 }
